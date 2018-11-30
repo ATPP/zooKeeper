@@ -36,7 +36,8 @@ public class ZkMain {
             //得到子节点
 //            ZkGetChildren.getChildren(zooKeeper, path);
 
-
+            //删除节点
+//            ZkDelete.delete(zooKeeper, path);
 
             connect.close();
         } catch (Exception e) {
