@@ -30,8 +30,13 @@ public class ZkMain {
 //            ZkGetData.getNodeDate(zooKeeper,path);
 
             //修改数据
-            ZkSetData.setData(zooKeeper, path, "two data".getBytes());
-            ZkGetData.getNodeDate(zooKeeper,path);
+//            ZkSetData.setData(zooKeeper, path, "two data".getBytes());
+//            ZkGetData.getNodeDate(zooKeeper,path);
+
+            //得到子节点
+//            ZkGetChildren.getChildren(zooKeeper, path);
+
+
 
             connect.close();
         } catch (Exception e) {
