@@ -1,6 +1,6 @@
 package com.redis;
 
-public interface JedisClient {
+public interface IJedisClient {
 
     public String get(String key);
 
@@ -15,4 +15,5 @@ public interface JedisClient {
     public Long expire(String key, int second);
 
     public Long ttl(String key);
+
 }
