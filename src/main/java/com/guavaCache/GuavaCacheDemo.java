@@ -64,10 +64,8 @@ public class GuavaCacheDemo {
             System.out.println("status, hitCount:" + cache.stats().hitCount()
                     + ", missCount:" + cache.stats().missCount());
         } catch (ExecutionException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
 
