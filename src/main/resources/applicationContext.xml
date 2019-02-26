@@ -14,6 +14,7 @@
         <property name="locations">
             <list>
                 <value>classpath:redis.properties</value>
+                <value>classpath:rocketmq.properties</value>
             </list>
         </property>
         <property name="fileEncoding" value="utf-8"/>

@@ -11,8 +11,12 @@ public class JavassistDemo {
         CtClass ctClass = pool.get("com.javassist.Product");
         CtMethod[] ctMethods = ctClass.getMethods();
         for (CtMethod cm : ctMethods) {
-            System.out.println(cm);
+            System.out.println("ctMethod "+cm);
         }
+        CtField ctFields = ctClass.getField("name");
+//        for (CtField field : ctFields){
+            System.out.println("field "+ctFields.getName());
+//        }
         CtMethod m = ctClass.getDeclaredMethod("getPrice");
         m.insertBefore("{ System.out.println($1); }");
         ctClass.writeFile();

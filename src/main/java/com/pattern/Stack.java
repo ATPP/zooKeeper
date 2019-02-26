@@ -1,5 +1,7 @@
 package com.pattern;
 
+import java.lang.annotation.Annotation;
+import java.lang.reflect.AnnotatedElement;
 import java.util.*;
 
 public class Stack<E> {
@@ -70,6 +72,16 @@ public class Stack<E> {
      */
     public void popAll(Iterable<? super E> src) {
 
+    }
+
+    static Annotation getAnnotation(AnnotatedElement element, String annotationTyprName){
+        Class<?> annotationType = null;
+        try {
+            annotationType = Class.forName(annotationTyprName);
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return element.getAnnotation(annotationType.asSubclass(Annotation.class));
     }
 
 

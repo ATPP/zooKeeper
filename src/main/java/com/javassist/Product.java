@@ -1,5 +1,8 @@
 package com.javassist;
 
+/**
+ * @author mc
+ */
 public class Product {
 
     private String name;
