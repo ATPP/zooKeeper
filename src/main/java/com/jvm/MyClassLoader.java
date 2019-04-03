@@ -27,6 +27,7 @@ public class MyClassLoader extends ClassLoader {
         return super.findClass(name);
     }
 
+//    返回类的字节码
     private byte[] getData(String name) throws IOException {
         InputStream inputStream = null;
         ByteArrayOutputStream outputStream = null;
